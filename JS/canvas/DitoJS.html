@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dito</title>
+
+  <style media="screen">
+    canvas{
+      background-color: #fffa;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="dito" width="1250" height="900">
+
+  </canvas>
+
+  <script>
+    function dibujar(){
+  var elemento = document.getElementById('dito');
+  dito = elemento.getContext('2d');
+
+  /*------------------------Cuerpo-------------------------------*/
+  dito.fillStyle="rgb(246, 130, 203)";
+  dito.lineCap="round";
+  dito.lineJoin="round";
+  dito.lineWidth=5;
+  dito.beginPath();
+  dito.moveTo(420,100);
+  //punto de control, fin de la curva
+  dito.quadraticCurveTo(300,0, 250,150);
+  dito.quadraticCurveTo(250,200, 150,250);
+  dito.quadraticCurveTo(100,300, 200,350);
+  dito.quadraticCurveTo(250,400, 150,600);
+  dito.quadraticCurveTo(150,650, 250,650);
+  dito.quadraticCurveTo(300,650, 400,680);
+  dito.quadraticCurveTo(500,710, 550,680);
+  dito.quadraticCurveTo(600,650, 650,680);
+  dito.quadraticCurveTo(850,710, 680,400);
+  dito.quadraticCurveTo(650,350, 700,300);
+  dito.quadraticCurveTo(900,150, 750,150);
+  dito.quadraticCurveTo(650,150, 640,120);
+  dito.quadraticCurveTo(600,50, 520,100);
+  dito.quadraticCurveTo(470,130, 420,100);
+  dito.closePath();
+  dito.fill();
+  dito.stroke();
+
+  /*------------------------Ojos-------------------------------*/
+  dito.beginPath();
+  dito.fillStyle="rgb(0,0,0)";
+  dito.arc(350,200,15,0,Math.PI*2, false);
+  dito.arc(500,200,15,0,Math.PI*2, false);
+  dito.closePath();
+  dito.fill();
+
+  /*------------------------Boca-------------------------------*/
+  dito.beginPath();
+  dito.moveTo(320,300);
+  dito.lineTo(550,290);
+  dito.lineWidth=5;
+  dito.closePath();
+  dito.stroke();
+}
+window.addEventListener("load", dibujar, false);
+
+  </script>
+</body>
+</html>
+
