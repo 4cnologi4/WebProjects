@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hereda {
+  display: inline-block;
+  margin: 0 5px;
+  max-height: 100%;
+  position: relative;
+}
+
+.grand-father-container {
+  background-color: $color-background;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+
+  .father-container {
+    margin: 10px;
+    width: 100%;
+    clear: both;
+
+    .left-container {
+      @extend .hereda;
+      float: left;
+      width: 30%;
+    }
+
+    .right-container {
+      @extend .hereda;
+      float: right;
+      width: 60%;
+
+      >p {
+        margin-left: 20px;
+        text-align: justify;
+        display: inline-block;
+      }
+    }
+
+    .separator {
+      @extend .hereda;
+
+      hr {
+        background-color: $color-gris;
+        height: 10rem;
+        width: 3px;
+      }
+    }
+
+    >p {
+      margin-left: 20px;
+      text-align: justify;
+      display: inline-block;
+    }
+
+    img {
+      margin: 2px 20px;
+    }
+
+    .child-container {
+      display: inline-block;
+      margin: 10px;
+      width: 100%;
+
+      >p {
+        margin: 5px;
+        text-align: justify;
+        display: inline-block;
+      }
+
+      cite {
+        margin: 5px;
+        text-align: justify;
+        display: inline-block;
+      }
+    }
+
+    .brother-container {
+
+      >p,
+      >cite {
+        display: inline-block;
+        width: 45%;
+        text-align: center;
+      }
+    }
+
+    #educa {
+      margin-top: -50px;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@media (max-width: 800px) {
+  * {
+    font-size: 10px;
+    text-align: center;
+    margin: 10px auto !important;
+  }
+
+  body {
+    background-color: $color-background;
+  }
+
+  .grand-father-container {
+    width: 100%;
+    height: 100% !important;
+  }
+
+  .father-container {
+    margin: auto;
+    width: 100%;
+
+    .left-container,
+    .right-container {
+      display: block;
+      margin: 0 auto;
+      position: initial;
+      width: 100% !important;
+
+      >p {
+        width: 90%;
+        margin: 10px;
+        display: block;
+      }
+    }
+
+    .separator {
+      display: none !important;
+    }
+
+    >p {
+      padding: 0 5px;
+      width: 90%;
+      margin: 10px;
+      display: block;
+    }
+
+    cite {
+      vertical-align: top;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .child-container {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+    }
+
+    #educa {
+
+      >p,
+      >cite {
+        display: block;
+        width: 90%;
+        text-align: center;
+      }
+    }
+
+    a {
+      color: $color-hover-a;
+    }
+
+    a,
+    p,
+    cite {
+      font-size: 1.5rem;
+    }
+
+    h1,
+    h2 {
+      font-size: 3rem;
+    }
+
+    address {
+      font-size: 10px;
+    }
+
+    hr {
+      margin: 20px auto !important;
+    }
+
+    ul {
+      li {
+        list-style-type: none;
+        margin: 10px !important;
+
+        a,
+        p,
+        address {
+          display: inline-block;
+          margin: 10px !important;
+        }
+      }
+    }
+  }
+
+}

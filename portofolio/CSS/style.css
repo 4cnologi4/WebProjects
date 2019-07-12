@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis|Fjalla+One|Rajdhani|Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.hereda, .grand-father-container .father-container .left-container, .grand-father-container .father-container .right-container, .grand-father-container .father-container .separator {
+  display: inline-block;
+  margin: 0 5px;
+  max-height: 100%;
+  position: relative; }
+
+.grand-father-container {
+  background-color: #fcfcec;
+  width: 80%;
+  height: 100%;
+  margin: auto; }
+  .grand-father-container .father-container {
+    margin: 10px;
+    width: 100%;
+    clear: both; }
+    .grand-father-container .father-container .left-container {
+      float: left;
+      width: 30%; }
+    .grand-father-container .father-container .right-container {
+      float: right;
+      width: 60%; }
+      .grand-father-container .father-container .right-container > p, .grand-father-container .father-container .right-container > address {
+        margin-left: 20px;
+        text-align: justify;
+        display: inline-block; }
+    .grand-father-container .father-container .separator hr {
+      background-color: #757474;
+      height: 10rem;
+      width: 3px; }
+    .grand-father-container .father-container > p, .grand-father-container .father-container > address {
+      margin-left: 20px;
+      text-align: justify;
+      display: inline-block; }
+    .grand-father-container .father-container img {
+      margin: 2px 20px; }
+    .grand-father-container .father-container .child-container {
+      display: inline-block;
+      margin: 10px;
+      width: 100%; }
+      .grand-father-container .father-container .child-container > p, .grand-father-container .father-container .child-container > address {
+        margin: 5px;
+        text-align: justify;
+        display: inline-block; }
+      .grand-father-container .father-container .child-container cite {
+        margin: 5px;
+        text-align: justify;
+        display: inline-block; }
+    .grand-father-container .father-container .brother-container > p, .grand-father-container .father-container .brother-container > address,
+    .grand-father-container .father-container .brother-container > cite {
+      display: inline-block;
+      width: 45%;
+      text-align: center; }
+    .grand-father-container .father-container #educa {
+      margin-top: -50px; }
+
+a,
+p,
+address,
+cite {
+  font-family: "Varela Round", sans-serif;
+  color: #757474;
+  font-size: 1rem; }
+
+address {
+  font-size: 10px; }
+
+h1,
+h2 {
+  margin: 5px;
+  font-family: "Fjalla One", sans-serif;
+  color: #0c0b0b; }
+
+hr {
+  margin: 10px;
+  width: 90%;
+  height: 3px;
+  background-color: #757474; }
+
+ul li {
+  list-style-type: none;
+  margin: 2px; }
+  ul li a,
+  ul li p,
+  ul li address,
+  ul li address {
+    text-decoration: none;
+    display: inline-block;
+    text-justify: auto;
+    margin: 10px 15px; }
+  ul li a:hover {
+    color: #0772ff; }
+
+.fas,
+.fab {
+  color: #757474; }
+
+@media (max-width: 800px) {
+  * {
+    font-size: 10px;
+    text-align: center;
+    margin: 10px auto !important; }
+
+  body {
+    background-color: #fcfcec; }
+
+  .grand-father-container {
+    width: 100%;
+    height: 100% !important; }
+
+  .father-container {
+    margin: auto;
+    width: 100%; }
+    .father-container .left-container,
+    .father-container .right-container {
+      display: block;
+      margin: 0 auto;
+      position: initial;
+      width: 100% !important; }
+      .father-container .left-container > p, .father-container .left-container > address,
+      .father-container .right-container > p,
+      .father-container .right-container > address {
+        width: 90%;
+        margin: 10px;
+        display: block; }
+    .father-container .separator {
+      display: none !important; }
+    .father-container > p, .father-container > address {
+      padding: 0 5px;
+      width: 90%;
+      margin: 10px;
+      display: block; }
+    .father-container cite {
+      vertical-align: top; }
+    .father-container img {
+      width: 100%; }
+    .father-container .child-container {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%; }
+    .father-container #educa > p, .father-container #educa > address,
+    .father-container #educa > cite {
+      display: block;
+      width: 90%;
+      text-align: center; }
+    .father-container a {
+      color: #0772ff; }
+    .father-container a,
+    .father-container p,
+    .father-container address,
+    .father-container cite {
+      font-size: 1.5rem; }
+    .father-container h1,
+    .father-container h2 {
+      font-size: 3rem; }
+    .father-container address {
+      font-size: 10px; }
+    .father-container hr {
+      margin: 20px auto !important; }
+    .father-container ul li {
+      list-style-type: none;
+      margin: 10px !important; }
+      .father-container ul li a,
+      .father-container ul li p,
+      .father-container ul li address,
+      .father-container ul li address {
+        display: inline-block;
+        margin: 10px !important; } }
+
+/*# sourceMappingURL=style.css.map */

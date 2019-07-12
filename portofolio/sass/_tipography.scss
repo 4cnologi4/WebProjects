@@ -1,0 +1,53 @@
+a,
+p,
+cite {
+  font-family: $g-font-varela;
+  color: $color-gris;
+  font-size: 1rem;
+}
+
+address {
+  @extend p;
+  font-size: 10px;
+}
+
+h1,
+h2 {
+  margin: 5px;
+  font-family: $g-font-fjalla;
+  color: $color-h;
+}
+
+hr {
+  margin: 10px;
+  width: 90%;
+  height: 3px;
+  background-color: $color-gris;
+}
+
+ul {
+  li {
+    list-style-type: none;
+    margin: 2px;
+
+    a,
+    p,
+    address {
+      text-decoration: none;
+      display: inline-block;
+      text-justify: auto;
+      margin: 10px 15px;
+    }
+
+    a {
+      &:hover {
+        color: $color-hover-a;
+      }
+    }
+  }
+}
+
+.fas,
+.fab {
+  color: $color-gris;
+}
